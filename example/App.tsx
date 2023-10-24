@@ -5,7 +5,7 @@ import * as MichaelessietMinimizeApp from '@michaelessiet/minimize-app';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{MichaelessietMinimizeApp.hello()}</Text>
+      <Text>{MichaelessietMinimizeApp.hello("hi")}</Text>
     </View>
   );
 }

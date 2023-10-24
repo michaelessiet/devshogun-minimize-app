@@ -19,8 +19,8 @@ public class MichaelessietMinimizeAppModule: Module {
     Events("onChange")
 
     // Defines a JavaScript synchronous function that runs the native code on the JavaScript thread.
-    Function("hello") {
-      return "Hello world! 👋"
+    Function("hello") { (value: String) in
+      return value
     }
 
     // Defines a JavaScript function that always returns a Promise and whose native code
