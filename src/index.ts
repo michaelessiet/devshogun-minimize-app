@@ -1,9 +1,3 @@
-import {
-	NativeModulesProxy,
-	EventEmitter,
-	Subscription,
-} from "expo-modules-core"
-
 // Import the native module. On web, it will be resolved to MichaelessietMinimizeApp.web.ts
 // and on native platforms to MichaelessietMinimizeApp.ts
 import MichaelessietMinimizeAppModule from "./MichaelessietMinimizeAppModule"
@@ -13,25 +7,16 @@ import {
 	MichaelessietMinimizeAppViewProps,
 } from "./MichaelessietMinimizeApp.types"
 
-// Get the native constant value.
-export const PI = MichaelessietMinimizeAppModule.PI
-
-export function hello(value: string): string {
-	return MichaelessietMinimizeAppModule.hello(value)
+export function minimize() {
+  return MichaelessietMinimizeAppModule.minimize()
 }
 
-export async function setValueAsync(value: string) {
-	return await MichaelessietMinimizeAppModule.setValueAsync(value)
+export function goBack() {
+  return MichaelessietMinimizeAppModule.goBack()
 }
 
-const emitter = new EventEmitter(
-	MichaelessietMinimizeAppModule ?? NativeModulesProxy.MichaelessietMinimizeApp
-)
-
-export function addChangeListener(
-	listener: (event: ChangeEventPayload) => void
-): Subscription {
-	return emitter.addListener<ChangeEventPayload>("onChange", listener)
+export function exit() {
+  return MichaelessietMinimizeAppModule.exit()
 }
 
 export {

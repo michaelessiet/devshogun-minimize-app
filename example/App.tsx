@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native';
-
-import * as MichaelessietMinimizeApp from '@michaelessiet/minimize-app';
+import * as MichaelessietMinimizeApp from "@michaelessiet/minimize-app";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{MichaelessietMinimizeApp.hello("hi")}</Text>
+      <Button onPress={MichaelessietMinimizeApp.minimize} title="Minimize" />
+      <Button onPress={MichaelessietMinimizeApp.goBack} title="Go Back" />
+      <Button onPress={MichaelessietMinimizeApp.exit} title="Exit" />
     </View>
   );
 }
@@ -13,8 +14,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
