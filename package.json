@@ -1,6 +1,6 @@
 {
-  "name": "@michaelessiet/minimize-app",
-  "version": "0.1.0",
+  "name": "devshogun-minimize-app",
+  "version": "0.0.1",
   "description": "An Expo module used to Minimize iOS and Android apps",
   "main": "build/index.js",
   "types": "build/index.d.ts",

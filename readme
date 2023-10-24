@@ -1,5 +1,0 @@
-# `@michaelessiet/minimize-app`
-
-A simple package for minimizing iOS react native apps
-
-Methods: `goBack`, `minimize`, `exit`
