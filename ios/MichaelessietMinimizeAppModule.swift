@@ -27,20 +27,6 @@ public class MichaelessietMinimizeAppModule: Module {
             }
         }
         
-        Function ("goBack") {
-            DispatchQueue.main.async {
-                if let sysNavIvar = class_getInstanceVariable(UIApplication.self, "_systemNavigationAction") {
-                    let app = UIApplication.shared
-                    if let action = object_getIvar(app, sysNavIvar) as? UISystemNavigationAction {
-                        guard let destination = action.destinations.first?.uintValue else {
-                            return
-                        }
-                        _ = action.sendResponse(for: destination)
-                    }
-                }
-            }
-        }
-        
         Function ("exit") {
             exit(0)
         }

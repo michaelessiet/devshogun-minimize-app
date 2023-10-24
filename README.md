@@ -1,11 +1,14 @@
-# @michaelessiet/minimize-app
+# devshogun-minimize-app
 
 An Expo module used to Minimize iOS and Android apps
 
 # API documentation
 
-- [Documentation for the main branch](https://github.com/expo/expo/blob/main/docs/pages/versions/unversioned/sdk/@michaelessiet/minimize-app.md)
-- [Documentation for the latest stable release](https://docs.expo.dev/versions/latest/sdk/@michaelessiet/minimize-app/)
+| methods    | description                                                                            | platforms    |
+| ---------- | -------------------------------------------------------------------------------------- | ------------ |
+| `goBack`   | Go back to the previous activity, whether it be an app or just the android home screen | Android      |
+| `minimize` | Minimize the application, taking the user to the devices home screen                   | iOS, Android |
+| `exit`     | Completely exit the application                                                        | iOS, Android |
 
 # Installation in managed Expo projects
 
@@ -18,18 +21,13 @@ For bare React Native projects, you must ensure that you have [installed and con
 ### Add the package to your npm dependencies
 
 ```
-npm install @michaelessiet/minimize-app
+npm install devshogun-minimize-app
 ```
 
 ### Configure for iOS
 
 Run `npx pod-install` after installing the npm package.
 
-
-### Configure for Android
-
-
-
 # Contributing
 
-Contributions are very welcome! Please refer to guidelines described in the [contributing guide]( https://github.com/expo/expo#contributing).
+Contributions are very welcome! Please refer to guidelines described in the [contributing guide](https://github.com/expo/expo#contributing).
