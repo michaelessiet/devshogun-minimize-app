@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@michaelessiet/minimize-app": ["../src/index"],
+      "@michaelessiet/minimize-app/*": ["../src/*"]
+    }
+  }
+}
